@@ -15,6 +15,10 @@ class Symbol:
 class Card(Symbol):
 
     def __init__(self, icon, value, color):
+        if icon == "♥" or icon == "♦":
+             color = "Red"
+        else:
+             color = "Black"
         super().__init__(icon, color)                                           
         self.value = value
 

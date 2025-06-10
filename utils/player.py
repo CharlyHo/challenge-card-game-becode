@@ -14,10 +14,11 @@ class Player:
 
 
     def play(self) -> Card:
-        card = random(self.cards)                               
-        self.history.append(card)
-        print(f"{self.name} {self.turn_count} played: {card.value} {card.icon}")
-        return card
+        played_card = random(self.cards)                               
+        self.history.append(played_card)
+        self.turn_count += 1
+        print(f"{self.name} {self.turn_count} played: {played_card.value} {played_card.icon}")
+        return played_card
     
     
 class Deck:                                                    

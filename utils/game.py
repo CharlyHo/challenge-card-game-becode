@@ -1,5 +1,5 @@
-from player import Player, Deck
-from card import Card
+from utils.player import Player, Deck
+from utils.card import Card
 from random import shuffle, random
 
 
